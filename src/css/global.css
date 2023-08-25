@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --sm: 576px;
+    --md: 768px;
+    --lg: 992px;
+}
+
+.app-root {
+    min-width: 576px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0.656rem auto;
+}
+
+.card-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: .625rem;
+}
+
+.card-image {
+    flex: 1;
+}
+
+.card-image img{
+    max-width: 12rem;
+    height: 8.75rem;
+    object-fit: cover;
+    border-radius: .938rem;
+}
+
+.card-headline {
+    flex: 2;
+}
+
+.headline-title {
+    font-size: 1.75rem;
+} 
+
+.headline-author {
+    font-size: .875rem;
+}

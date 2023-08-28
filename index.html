@@ -4,11 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CardNews</title>
+    <!-- FONT: NOTO SANS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- MEUS ARQUIVOS -->
     <link rel="stylesheet" href="src/css/global.css">
+    <script src="src/js/CardHeadline.js" defer></script>
+    <script src="src/js/CardWeather.js" defer></script>
 </head>
 <body>
     <main class="app-root">
-        <section class="card-container">
+        <!-- <section class="card-container">
             <div class="card-content">
                 <div class="card-image">
                     <img src="images/blaze-logo.jpg" alt="Logo da blaze">
@@ -19,6 +26,51 @@
                 </div>
             </div>
             <hr class="card-divisor">
+        </section>
+        <section class="weather-container">
+            <div class="weather-content">
+                <div class="today-image">
+                    <img src="images/weather/weather-_0001_rain.png" alt="rainy">
+                </div>
+                <span class="today-description">Rainy</span>
+                <div class="today-details">
+                    <span class="details-temp">20°C</span>
+                    <span class="details-rain">💧95%</span>
+                </div>
+            </div>
+        </section> -->
+        <section class="headlines">
+            <headline-card
+                imagePath = "images/blaze-logo.jpg"
+                headline = "URGENTE: É revelado o dono da Blaze!"
+                author = "Gustavo Macedo"
+            ></headline-card>
+            <headline-card
+            headline = "URGENTE: É revelado o dono da Blaze!"
+            author = "Gustavo Macedo"
+            ></headline-card>
+            <headline-card
+            imagePath = "images/blaze-logo.jpg"
+            headline = "URGENTE: É revelado o dono da Blaze!"
+            ></headline-card>
+            <headline-card
+                headline = "URGENTE: É revelado o dono da Blaze!"
+                author = "Gustavo Macedo"
+            ></headline-card>
+            <headline-card
+                imagePath = "images/blaze-logo.jpg"
+                headline = "URGENTE: É revelado o dono da Blaze!"
+                author = "Gustavo Macedo"
+            ></headline-card>
+        </section>
+        <section class="weather">
+            <weather-card
+                imagePath = "images/weather/weather-_0001_rain.png"
+                description = "Rainy"
+                temperature = "20 °C"
+                rain = "💧95%"
+            >
+            </weather-card>
         </section>
     </main>
 </body>
